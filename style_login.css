@@ -1,0 +1,53 @@
+
+
+		body {
+  			background-color: White;
+			margin: 0px;
+			}
+
+		h1 {
+  			color: white;
+  			text-align: center;
+			}
+            
+        h2 {
+  			color: black;
+  			text-align: center;
+			margin: 7px;
+			}
+            
+        
+        .item-a { grid-area: header; background-color: DodgerBlue; color: white}
+		.item-b { grid-area: bloc_welcome; background-color: LightGray; color: Black; }
+		.item-c { grid-area: bloc_login; background-color: white; justify-self:center;}
+        .item-d { grid-area: bloc_sign_in; background-color: white; justify-self:center; }
+        .item-e { grid-area: footer; background-color: DodgerBlue; color: white}
+        
+
+		.container {
+		display: grid;
+		grid-template-columns: 50px 200px 200px 50px;
+		grid-template-rows: 60px 200px 30px 90px 30px 100px;
+		grid-template-areas:
+		" header header header header "
+		" bloc_welcome bloc_welcome bloc_welcome bloc_welcome "
+        " . . . . "
+		" bloc_login bloc_login bloc_login bloc_login "
+        " . . . . "
+        " . bloc_sign_in bloc_sign_in . "
+		"footer footer footer footer";
+		}
+        
+        .btn {
+  			
+  			bottom: 200px;
+  			width: 80%;
+            background-color: DodgerBlue;
+            color: white 
+		}
+        
+        img.log {
+			text-align: center;
+		}
+		
+@media screen and { max-width : 800px }
